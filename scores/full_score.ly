@@ -5,15 +5,20 @@
 
 \book {
   \bookpart {
-    \section "Salve regina"
+    \section "Salve Regina"
     \addTocEntry
-    \paper { indent = 3\cm }
+    \paper {
+      system-system-spacing.basic-distance = #22
+      system-system-spacing.minimum-distance = #22
+      systems-per-page = #3
+      indent = 3\cm
+    }
     \score {
       <<
-        \new StaffGroup <<
+        \new StaffGroup \with { \smallGroupDistance } <<
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "Violini" "unisoni" }
-            \SalveViolino
+            \set Staff.instrumentName = "Violino I, II"
+            \SalveViolini
           }
           \new Staff {
             \set Staff.instrumentName = "Viola"

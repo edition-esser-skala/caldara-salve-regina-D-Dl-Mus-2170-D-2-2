@@ -1,9 +1,9 @@
 composer:
   last: Caldara
   first: Antonio
-title: Salve regina
+title: Salve Regina
 genre: antiphon
-scoring: S (solo), vl, vla, b, org
+scoring: S (solo), 2 vl, vla, b, org
 license: cc-by-sa-4.0
 sources:
   B1:
@@ -16,5 +16,5 @@ sources:
     principal: true
 imslp:
 parts:
-  vl: Violini unisoni
+  vl12: Violino I, II
   S_solo: Soprano solo
