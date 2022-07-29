@@ -5,41 +5,28 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "Salve Regina"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper {
+      system-system-spacing.basic-distance = #20
+      system-system-spacing.minimum-distance = #20
+      systems-per-page = #6
+      indent = 2\cm
+    }
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "Soprano"
-            \new Voice = "Soprano" { \dynamicUp \xxxSoprano }
+            \new Voice = "Soprano" { \dynamicUp \SalveSoprano }
           }
-          \new Lyrics \lyricsto Soprano \xxxSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "Alto"
-            \new Voice = "Alto" { \dynamicUp \xxxAlto }
-          }
-          \new Lyrics \lyricsto Alto \xxxAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "Tenore"
-            \new Voice = "Tenore" { \dynamicUp \xxxTenore }
-          }
-          \new Lyrics \lyricsto Tenore \xxxTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "Basso"
-            \new Voice = "Basso" { \dynamicUp \xxxBasso }
-          }
-          \new Lyrics \lyricsto Basso \xxxBassoLyrics
+          \new Lyrics \lyricsto Soprano \SalveSopranoLyrics
         >>
         \new Staff {
           \set Staff.instrumentName = "Organo"
-          \xxxOrgano
+          \SalveOrgano
         }
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \SalveBassFigures }
       >>
     }
   }
