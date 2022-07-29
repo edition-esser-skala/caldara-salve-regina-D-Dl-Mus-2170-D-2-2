@@ -1,0 +1,20 @@
+composer:
+  last: Caldara
+  first: Antonio
+title: Salve regina
+genre: antiphon
+scoring: S (solo), vl, vla, b, org
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: D-Dl
+    shelfmark: Mus.2170-D-2,2
+    date: 1721–1729
+    rism: 212009442
+    url: https://digital.slub-dresden.de/id469811463
+    license: public domain
+    principal: true
+imslp:
+parts:
+  vl: Violini unisoni
+  S_solo: Soprano solo
